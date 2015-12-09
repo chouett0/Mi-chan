@@ -3,7 +3,7 @@ import twitter
 import MySQLdb
 from time import sleep
 import re
-
+"""
 def remake(text):
 	slice = text[0:1]
 	while slice != " ":
@@ -19,6 +19,7 @@ def remake(text):
 			text.find("RT")
 
 	return text
+"""
 
 def reply():
 	try:
