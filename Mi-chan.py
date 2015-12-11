@@ -23,10 +23,10 @@ def remake(text):
 
 def reply():
 	try:
-		KEY_list = ["NfNHe3Kfa7wFa4QqYv1IDIxue",
-		"1QES7aDlEWcG123SVWvPEqFQFxsUBzz7o6F8fuMt8BlPyFkJ9n",
-		"3035577192-zuZ3Wx3nVsilgzCvyiSUIoKRoqZ4nIo5sagMK41",
-		"toyIlNC5nhGsgOf1lPxGBbIHhxsDIBaUv7nZOfufXOSMv"
+		KEY_list = ["",
+		"",
+		"",
+		""
 		]
 
 		api = twitter.Api(KEY_list[0], KEY_list[1], KEY_list[2], KEY_list[3])
@@ -38,7 +38,7 @@ def reply():
 
 	since = 0
 
-	connecter = MySQLdb.connect(host="localhost", user="mmzuku", passwd="ta9ns2uk7um0", db="Tweet", charset="utf8")
+	connecter = MySQLdb.connect(host="localhost", user="", passwd="", db="Tweet", charset="utf8")
 	csr = connecter.cursor()
 
 	tl = api.GetHomeTimeline(since_id=since)
@@ -58,16 +58,13 @@ def reply():
 	"""
 
 def collect():	
-	KEY_list = ["NfNHe3Kfa7wFa4QqYv1IDIxue",
-	"1QES7aDlEWcG123SVWvPEqFQFxsUBzz7o6F8fuMt8BlPyFkJ9n",
-	"3035577192-zuZ3Wx3nVsilgzCvyiSUIoKRoqZ4nIo5sagMK41",
-	"toyIlNC5nhGsgOf1lPxGBbIHhxsDIBaUv7nZOfufXOSMv"
+	KEY_list = [
 	]
 	api = twitter.Api(KEY_list[0], KEY_list[1], KEY_list[2], KEY_list[3])
 
 	since = 0
 	
-	connecter = MySQLdb.connect(host="localhost", user="mmzuku", passwd="ta9ns2uk7um0", db="Tweet", charset="utf8")
+	connecter = MySQLdb.connect(host="localhost", user="", passwd="", db="Tweet", charset="utf8")
 	csr = connecter.cursor()
 	tl = api.GetHomeTimeline(since_id=since)
 
