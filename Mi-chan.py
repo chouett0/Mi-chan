@@ -88,8 +88,50 @@ def collect():
 
 	connecter.commit()
 
+def Check_port(flag):
+ #check_port
+
+ Port = [80, 110, 442, 3329, 3333]
+ for p in Port:
+ try:
+  s = socket(AF_INET, SOCK_STREAM,0)
+  s.settimeout(1)
+  s.connect*1
+  print str(p) + ':OK'
+  s.close()
+  flag = 1
+ except error, msg:
+  print str(p) + ':' + str(msg)
+  flag = -1
+ Return 
+
+def send_ping():
+ #send_ping
+
+def send_MagicPacket()
+ #send_MPacket
+
 if __name__ == "__main__":
-	while True:
-		collect()
-		reply()
-		sleep(60*5)
+ while True:
+# Check_flag = Port_check()
+ if Port_check() > 0:
+  time.sleep(30)
+
+ else:
+  check_flag = send_ping()
+  report("port error")
+   if check_flag > 0:
+    sys.exit()
+
+   else:
+     check_flag = send_MagicPacket()
+     report("Can't ping")
+     if check_flag > 0:
+      sys.exit()
+
+     else:
+      report("Can't Access Server")
+      sys.exit()
+     
+ 
+	
