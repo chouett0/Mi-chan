@@ -3,6 +3,8 @@ import twitter
 import MySQLdb
 from time import sleep
 import re
+import socket
+
 """
 def remake(text):
 	slice = text[0:1]
@@ -106,10 +108,13 @@ def Check_port(flag):
  Return 
 
 def send_ping():
- #send_ping
+ s = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_ICMP
+
+ ip = (address, port)
+  s.sendto('¥x08¥x00¥xf5¥xfc¥x01¥x01¥x01¥x02', ip)
 
 def send_MagicPacket()
- #send_MPacket
+ 
 
 if __name__ == "__main__":
  while True:
