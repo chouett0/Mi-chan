@@ -4,10 +4,10 @@ require "uri"
 
 tagger = MeCab::Tagger.new
 client = Twitter::REST::Client.new do |config|
-	config.consumer_key = 		"NfNHe3Kfa7wFa4QqYv1IDIxue"
-	config.consumer_secret = 	"1QES7aDlEWcG123SVWvPEqFQFxsUBzz7o6F8fuMt8BlPyFkJ9n"
-	config.access_token = 		"3035577192-zuZ3Wx3nVsilgzCvyiSUIoKRoqZ4nIo5sagMK41"
-	config.access_token_secret = 	"toyIlNC5nhGsgOf1lPxGBbIHhxsDIBaUv7nZOfufXOSMv"
+	config.consumer_key = 		""
+	config.consumer_secret = 	""
+	config.access_token = 		""
+	config.access_token_secret = 	""
 
 end
 
